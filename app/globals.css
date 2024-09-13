@@ -3,25 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-bg-color: #1e1e1e; /* Black background */
+  --primary-text-color: #ffffff; /* White text for contrast */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
+
+a:hover {
+  color: #bbbbbb; 
+}
+
+header {
+  background-color: #1a1a1a; 
+}
+
+header a {
+  color: var(--primary-text-color);
+}
+
+/* header a:hover {
+  color: #bbbbbb;
+} */
+
+
+.valorant-gradient {
+  background: linear-gradient(135deg, #e70c0c, #ff7777, #fff4f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:  transparent;
+  /* valorant gradient */
+}
+
+.fullscreen-div {
+  position: absolute; /* or fixed, depending on your needs */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden; /* To prevent scrollbars if content overflows */
+}
+
