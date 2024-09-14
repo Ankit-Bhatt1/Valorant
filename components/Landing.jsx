@@ -2,6 +2,9 @@ import React from 'react'
 import{Anton} from '@next/font/google'
 import { Raleway } from '@next/font/google'
 import Asset from './Asset'
+import Image from 'next/image'
+import Login from './Login'
+import Landing2 from './Landing2'
 
 const raleway = Raleway({subsets:['latin'], weight:'200'})
 const anton = Anton({subsets:['latin'], weight:'400'})
@@ -9,10 +12,9 @@ const anton = Anton({subsets:['latin'], weight:'400'})
 const Landing = () => {
   return (
     <>
-    <div className='bg-red-500 '>
-    .
-    <div className={'w-[700px] h-[450px] m-10 p-5 bg-slate-200 rounded-[30px] '}>
-           <ul className={'text-[100px] tracking-widest'} >
+    <div className={' flex justify-around' }>
+      <div>
+        <ul className={'text-[100px] tracking-widest'} >
             <li className={anton.className}>
               WELCOME TO
             </li>
@@ -22,8 +24,14 @@ const Landing = () => {
             <li className={anton.className}>
               INSIGHT
             </li>
-           </ul>  
+        </ul>
+      </div>
+      <div className={'image-bg p-[150px] w-[100px] '}>
+        
+      </div>  
     </div>
+    <div>
+      <Landing2/>
     </div>
     </>
   )

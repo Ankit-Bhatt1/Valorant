@@ -1,0 +1,43 @@
+ <span>
+        <h1 className='text-3xl m-5 p-5' >THE LATEST</h1>
+    </span>
+    <div class='flex justify-around mb-10'>
+        <div class="bg-slate-400 w-[450px] h-[400px] text-center border-2 border-black ">
+            <div class=" flex flex-col border-2 border-cyan-700 h-[200px] p-7 ">
+                {/* <Image
+                src={'/images/Vice.png'}
+                width={450}
+                height={200}
+                priority
+                >
+
+                </Image> */}
+            </div>
+                <div class="border-2 h-[100px]">
+                    content
+                </div>
+                <div class="border-2 border-black h-[100px]">
+                    content2
+                 </div>
+        </div>
+        <div class="bg-slate-400 w-[450px] h-[400px] text-center border-2 border-black ">
+            <div class=" flex flex-col border-2 border-cyan-700 h-[200px] p-7 ">image</div>
+                <div class="border-2 h-[100px]">
+                    content
+                </div>
+                <div class="border-2 border-black h-[100px]">
+                    content2
+                 </div>
+        </div>
+        <div class="bg-slate-400 w-[450px] h-[400px] text-center border-2 border-black ">
+            <div class=" flex flex-col border-2 border-cyan-700 h-[200px] p-7 ">image</div>
+                <div class="border-2 h-[100px]">
+                    content
+                </div>
+                <div class="border-2 border-black h-[100px]">
+                    content2
+                 </div>
+        </div>
+    
+    </div>
+    </>

@@ -9,13 +9,13 @@ const Header = () => {
   return (
       <div>
         
-        <ul className={'flex mt-5 mb-3 '}>
+        <ul className={'flex mt-5 mb-3 flex-wrap  '}>
           <ul>
             <li className='font-valorant mr-auto text-2xl ml-5 '>
               <Logo/>
             </li> 
           </ul>
-          <ul className={'flex gap-[250px] mr-[60px] ml-auto '+ roboto.className}>
+          <ul className={'flex gap-[250px] mr-[60px] ml-auto flex-wrap '+ roboto.className}>
             <li>
               <button className='hover:'>AGENTS</button>
             </li>

@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 
+
 .valorant-gradient {
   background: linear-gradient(135deg, #ff0000, #ff2626, #ff5454);
   -webkit-background-clip: text;
-  -webkit-text-fill-color:  transparent;
+  -webkit-text-fill-color :  transparent;
   /* valorant gradient */
 }
 
@@ -21,4 +22,26 @@
   body {
     @apply font-valorant; 
   }
+}
+
+.image-bg {
+  background-image: url('/images/valo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.download-bg {
+  background-image: url('/images/download.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 1000px;
+  border-radius: 20px; 
+}
+
+.champion-bg {
+  background-image: url('/images/champion.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  /* border-radius: 20px;  */
 }
