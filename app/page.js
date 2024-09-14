@@ -1,11 +1,12 @@
 import Landing from '@/components/Landing'
 import React from 'react'
-import mySvg from '/asset/valorant-seeklogo.svg'
+
 
 const page = () => {
   return (
     <div>
-      <mySvg/>
+      <div className='border-2 border-b-cyan-950'>
+      </div>
       <Landing/>
     </div>
   )

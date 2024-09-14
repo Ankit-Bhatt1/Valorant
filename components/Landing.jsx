@@ -8,16 +8,24 @@ const anton = Anton({subsets:['latin'], weight:'400'})
 
 const Landing = () => {
   return (
-    <div className={''}>
-        <div className={' p-5 grid mt-[50px] tracking-wider text-[100px] '+ anton.className}>
-            <span>WELCOME TO </span> 
-            <span className=' valorant-gradient cursor-pointer duration-200 hover:text-[105px] '>VALORANT</span> 
-            <span> GUIDES </span>
-        </div>
-        {/* <span className={'text-2xl ml-5 ' + raleway.className}>
-        This website has all you need to master your valorant knowledge and skill
-        </span> */}
+    <>
+    <div className='bg-red-500 '>
+    .
+    <div className={'w-[700px] h-[450px] m-10 p-5 bg-slate-200 rounded-[30px] '}>
+           <ul className={'text-[100px] tracking-widest'} >
+            <li className={anton.className}>
+              WELCOME TO
+            </li>
+            <li className='valorant-gradient font-valorant '>
+              VALORANT
+            </li>
+            <li className={anton.className}>
+              INSIGHT
+            </li>
+           </ul>  
     </div>
+    </div>
+    </>
   )
 }
 

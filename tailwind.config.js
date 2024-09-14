@@ -7,11 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        valorant: ['Valorant', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addBase }) {
+      addBase({
+        '*': { boxSizing: 'border-box' },
+        '*::before': { boxSizing: 'border-box' },
+        '*::after': { boxSizing: 'border-box' },
+      });
+    },
+  ],
 };

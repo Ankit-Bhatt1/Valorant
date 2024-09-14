@@ -2,53 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary-bg-color: #1e1e1e; /* Black background */
-  --primary-text-color: #ffffff; /* White text for contrast */
-}
-
-body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-a {
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: #bbbbbb; 
-}
-
-header {
-  background-color: #1a1a1a; 
-}
-
-header a {
-  color: var(--primary-text-color);
-}
-
-/* header a:hover {
-  color: #bbbbbb;
-} */
-
 
 .valorant-gradient {
-  background: linear-gradient(135deg, #e70c0c, #ff7777, #fff4f4);
+  background: linear-gradient(135deg, #ff0000, #ff2626, #ff5454);
   -webkit-background-clip: text;
   -webkit-text-fill-color:  transparent;
   /* valorant gradient */
 }
 
-.fullscreen-div {
-  position: absolute; /* or fixed, depending on your needs */
-  top: 0;
-  left: 0;
-  width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
-  overflow: hidden; /* To prevent scrollbars if content overflows */
+@font-face {
+  font-family: 'Valorant';
+  src: url('./fonts/Valorant.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@layer base {
+  body {
+    @apply font-valorant; 
+  }
+}

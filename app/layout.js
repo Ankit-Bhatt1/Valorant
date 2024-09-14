@@ -8,11 +8,18 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const valorant = localFont({
+  src:"./fonts/Valorant.ttf",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -21,18 +28,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const header = (
-    <header className="p-1 bg-[#3c3c3c] ">
+    <header>
       <h1>
         <Header/>
       </h1>
     </header>
   )
   const footer = (
-    <header className="p-4 bg-black">
+    <footer>
       <h1>
       <Footer/>
       </h1>
-    </header>
+    </footer>
   )
 
   return (
